@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  
+</head>
+<style>
+   
+body {
+    font-family: Arial, sans-serif;
+    background-color: blanchedalmond;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  
+  form {
+    background-color: rgb(194, 129, 129);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="checkbox"] {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  input[type="checkbox"] {
+    width: auto;
+    margin-top: 8px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+ 
+  table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+
+</style>
+<body>
+  <form id="registrationForm">
+    <label for="name">Name:</label>
+    <input required type="text" id="name" ><br><br>
+
+    <label for="email">Email:</label>
+    <input required type="email" id="email" ><br><br>
+
+    <label for="password">Password:</label>
+    <input required type="password" id="password" ><br><br>
+
+    <label for="dob">Date of Birth (YYYY-MM-DD):</label>
+    <input required type="text" id="dob" ><br><br>
+
+    <label for="terms">Accept Terms and Conditions</label>
+    <input requred type="checkbox" id="terms" ><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <table id="dataTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Dob</th>
+        <th>Accepted terms?</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="index.js">
+    </script>
+</body>
+</html>
